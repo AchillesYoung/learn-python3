@@ -1,0 +1,14 @@
+
+def arithmetic (x = 1, y =  1, operator = "+"):
+    result = {
+        "+" : x + y,
+        "-" : x - y,
+        "*" : x * y,
+        "/" : x / y
+    }
+    return result.get(operator)
+
+print (arithmetic(1,2))
+print (arithmetic(y = 2, operator = "-"))
+print (arithmetic(y = 3, x = 1, operator = "*"))
+
